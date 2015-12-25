@@ -1,0 +1,13 @@
+Dear {{ user.username }},
+
+Welcome to Flasky!
+
+To change your email please click on the following link:
+
+{{ url_for('auth.changeemail', token=token, _external=True) }}
+
+Sicerely,
+
+The Flasky Team
+
+Note: replies to this address are not monitored
